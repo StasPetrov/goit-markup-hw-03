@@ -32,6 +32,8 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* HEADER-POSITION */
 .container {
@@ -58,7 +60,6 @@ img {
 }
 /* HEADER STUDIO */
 .logo {
-  margin-right: 70px;
   color: var(--primary-blue-color);
   font-family: Raleway;
   font-weight: 700;
@@ -67,6 +68,7 @@ img {
   letter-spacing: 0.03em;
 }
 .logo-black {
+  margin-right: 70px;
   color: #000000;
 }
 .site-nav-item:not(:last-child) {
@@ -106,9 +108,12 @@ img {
   padding: 24px 0;
 }
 .banner {
+  padding: 200px 452px;
+  text-align: center;
   background-color: var(--primary-background-color);
 }
 .banner-title {
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -133,10 +138,14 @@ img {
 .banner-buttons:focus {
   background-color: #188ce8;
 }
+.features-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
 .features-list {
   display: flex;
 }
 .features-list-title {
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -152,7 +161,11 @@ img {
 .project-list {
   display: flex;
 }
+.project-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
 .section-title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -169,8 +182,9 @@ img {
 .team-list {
   display: flex;
 }
-.team-card {
+.team-card:not(:nth-child(4n)) {
   background-color: var(--primary-white-color);
+  margin-right: 30px;
 }
 .team-card-title {
   font-weight: 500;
